@@ -50,8 +50,14 @@
 <form action="/" method="POST">
     <label for="fname">Terméknév: </label>
     <input type="text" id="product_name" name="product_name"><br><br>
-    <input type="submit" value="Submit">
+    <button type="submit">Submit</button>
   </form>
 
+    {%if products_%}
+        <h2>Beküldött adat:</h2>
+        {%for item in products_%}
+                {{product}}
+        {%endfor%}
+    {% endif %}
 </body>
 </html>
