@@ -53,13 +53,6 @@
     <button type="submit">Submit</button>
   </form>
 
-    {%if products_%}
-        <h2>Beküldött adat:</h2>
-        <ul>
-        {%for product in products_%}
-                <li>{{ product }}</li>
-        {%endfor%}
-        </ul>
-    {% endif %}
+    <a href="/products">Beküldött termékek</a>
 </body>
 </html>
