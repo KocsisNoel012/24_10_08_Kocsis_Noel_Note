@@ -55,9 +55,11 @@
 
     {%if products_%}
         <h2>Beküldött adat:</h2>
-        {%for item in products_%}
-                {y{product}}
+        <ul>
+        {%for product in products_%}
+                <li>{{ product }}</li>
         {%endfor%}
+        </ul>
     {% endif %}
 </body>
 </html>
